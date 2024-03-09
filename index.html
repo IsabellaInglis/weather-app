@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -29,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="city">City</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
               Saturday 13:45, moderate rain
               <br />
@@ -37,7 +38,8 @@
             </p>
           </div>
           <div class="weather-app-temperature">
-            <span class="temp-icon">🌤️</span><span class="temp-value">24</span
+            <span class="temp-icon">🌤️</span
+            ><span class="temp-value" id="temperature"></span
             ><span class="temp-unit">°C</span>
           </div>
         </div>
